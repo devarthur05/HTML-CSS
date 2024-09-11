@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            
+        }
+
+        .sub{
+            text-align: left;
+        }
+
+        .des{
+            background-color: grey;
+            color: white;
+        }
+        th#um{
+            text-align: left;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="des" scope="rowgroup">ÁREA</th>
+                <th rowspan="2" class="des" scope="rowgroup">DISCIPLINAS</th>
+                <th colspan="2 " class="des" scope="colgroup">NOTAS</th>
+                <th rowspan="2" class="des" scope="rowgroup">MÉDIA</th>
+            </tr>
+            <tr>
+                <th class="des" scope="col">NOTA 1</th>
+                <th class="des" scope="col">NOTA 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">EXATAS</th>
+                <td>MATEMÁTICA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>FISICA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>QUIMICA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>BIOLOGIA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="rowgroup" class="des" id="um">MÉDIA DE EXATAS</th>
+                <td class="des">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">HUMANAS</th>
+                <td>HISTÓRIA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>GEOGRAFIA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="colgroup" class="des" id="um">MÉDIA DE HUMANAS</th>
+                <td class="des" >0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
