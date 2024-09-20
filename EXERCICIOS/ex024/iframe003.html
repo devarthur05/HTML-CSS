@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            
+
+        }
+    </style>
 </head>
 <body>
     <h1>Faça uma escolha</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam neque velit odio beatae placeat, temporibus animi reprehenderit, non praesentium nisi, suscipit consequuntur numquam magnam blanditiis explicabo aspernatur adipisci minus?</p>
 
     <ul>
-        <li><a href="#">Primeira pagina</a></li>
-        <li><a href="#">Segunda pagina</a></li>
-        <li><a href="#">Terceira pagina</a></li>
+        <li><a href="pagina001.html" target="frame">Primeira pagina</a></li>
+        <li><a href="pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="pag003.html" target="frame">Terceira pagina</a></li>
     </ul>
 
 
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi possimus aspernatur deserunt, in alias aliquid, nostrum sapiente, accusamus rem nobis saepe! Iste unde labore laudantium blanditiis illum expedita, commodi quaerat!</p>
 
-    <iframe src="" frameborder="0">
-        <p>Infelizmmente seu navegador</p>
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>">
+        <p>Infelizmmente seu navegador não é compativel com isso</p>
     </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ab tempore vel sunt similique tempora voluptas, voluptatem praesentium illum ipsam nesciunt maiores dolores provident explicabo ut eaque modi facere rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est dolor nostrum, ullam voluptatem eum quidem vitae assumenda eaque ex expedita similique, rerum ipsum veritatis eius fugiat? Ratione sed optio dolorem?</p>
 
 </body>
 </html>
